@@ -1724,6 +1724,27 @@ Led migration of A to B
 // ─── PROJECT DATA ─────────────────────────────────────────────────────────────
 const BUILTIN_PROJECTS = [
   {
+    id: 'fb-lead-gen',
+    title: 'Hybrid Facebook Lead Generation & Outreach System',
+    type: 'Sales Automation',
+    shortDesc: 'Autonomous n8n system that finds, qualifies, and drafts outreach for Facebook leads twice daily.',
+    desc: 'A fully autonomous lead generation pipeline built in n8n. It scans Facebook every 12 hours across targeted keywords, filters out spam and stale posts, uses AI to score each lead\'s intent and quality, then drafts a personalized comment and DM reply for every qualified lead — logging everything to Google Sheets for manual review before anything is sent.',
+    features: [
+      'Runs automatically every 12 hours via cron trigger',
+      'Apify-powered Facebook search across 6 targeted keywords',
+      'Multi-layer filtering — post age, spam detection, duplicate removal',
+      'AI lead scoring (1–10) with confidence rating and pain-point extraction',
+      'AI-drafted comment + DM replies, portfolio links included automatically',
+      'Human-in-the-loop — nothing auto-posts, every reply is reviewed first',
+      'Built-in error handling with dedicated error logging workflow'
+    ],
+    tags: [['n8n','cyan'],['Apify','purple'],['Groq / Llama 3.3','amber'],['Lead Gen','green']],
+    github: 'https://github.com/Shubeetheanalyst/facebook-lead-gen-automation-n8n.git', demo: null,
+    videoFile: null, emoji: '🎯',
+    videoUrl: null,
+    photos: ['images/FB_Lead_Gen.png']
+  },
+  {
     id: 'alia-sales-agent',
     title: 'ALIA — AI Voice Sales Agent',
     type: 'Voice AI',
